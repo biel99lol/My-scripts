@@ -4,9 +4,9 @@ local Players = game:GetService("Players")
 local whitelistFriends = {}
 local whitelistPlayers = {}
 
-table.insert(whitelistFriends, "ROBLOX6666JM")
+table.insert(whitelistFriends, "Blizz_T")
 
-table.insert(whitelistPlayers, {Id = 7346686860, Name = "ROBLOX6666JM"})
+table.insert(whitelistPlayers, {Id = @UsernameId, Name "Blizz_T"})
 
 Players.PlayerAdded:Connect(function(player)
   local isWhitelisted = false
