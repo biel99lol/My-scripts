@@ -1,0 +1,14 @@
+--[[
+
+local BannedPlayers = {
+    ["nickname"] = true,
+    [id] = true
+}
+
+game.Players.PlayerAdded:Connect(function(player)
+    if BannedPlayers[player.Name] or BannedPlayers[player.UserId] then
+        player:Kick("You have been banned from the game.")
+    end
+end)
+
+--]]
